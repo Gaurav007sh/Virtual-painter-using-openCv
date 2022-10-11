@@ -59,7 +59,7 @@ while True:
     rgb = cv2.cvtColor(frm, cv2.COLOR_BGR2RGB)
 
     op = hand_landmark.process(rgb)
-
+    print("jai Shree Ram !!!!")
     if op.multi_hand_landmarks:
         for i in op.multi_hand_landmarks:
             draw.draw_landmarks(frm, i, hands.HAND_CONNECTIONS)
